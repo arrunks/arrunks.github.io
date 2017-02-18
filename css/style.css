@@ -3,19 +3,32 @@ body, html {
     font-family: 'Raleway', sans-serif;
 }
 .relative{position:relative;}
+hr{
+	margin: 18px 0;
+    background-color: transparent;
+    border-top: 2px dashed rgb(51, 48, 71);
+}
 #section-main{
+	min-height:100vh;
 	background:url('../img/bg-1.jpg') repeat-y;
 	background-attachment: fixed;
 	background-size: cover;
 	overflow:hidden;
 }
 section{
-	min-height:100vh;
 	width:100%;
 }
-section.about-me,
+footer{
+	/*min-height:100px;*/
+	padding:3em 0;
+	background:rgb(40, 38, 51);
+	color:#fff;
+}
+section.about-me{
+	padding:3em 0;
+}
 section.what-i-can{
-	padding:2% 0;
+	padding:2em 0;
 }
 section.about-me h1{
 	font-size:3em;
@@ -40,17 +53,70 @@ section.about-me .expertise-container h4{
 	font-size:1.2em;
 }
 section.about-me .expertise-container .progress{
-	height:12px;
+	height:8px;
 	background-color:#ddd;
 }
 section.about-me .expertise-container .progress-bar{
-	background-color:#424873;
+	background-color:rgb(51, 48, 71);
+}
+section.projects{
+	background:rgb(240, 238, 249);
+	min-height:400px;
+	margin:7em 0;
+	padding:3em 0;
+}
+section.contact-me{
+	/*background:#607D8B;*/
+	min-height:600px;
+	padding:3em 0;
+	margin:4em 0 0 0;
+	/*color:#fff;*/
+}
+section.projects a{
+	height: 250px;
+    display: inline-block;
+    width: 300px;
+    position:relative;
+    margin:50px;
+    box-shadow:10px 10px 10px 0px #ccc;
+}
+section.projects a img{
+	height:250px;
+}
+section.projects a:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:#000;
+	opacity:0.4;
+}
+section.projects a .project-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
 }
 .can-item{
 	padding:4em 0;
 }
 .can-item i{
 	font-size:60px;
+}
+.icon-container{
+	color:rgb(51, 48, 71);
+}
+.can-item .text-container{
+	max-width: 300px;
+    margin: 0 auto;
+}
+textarea{
+	resize:none;
 }
 .view-profile{
 	position:absolute;
@@ -75,6 +141,9 @@ section.about-me .expertise-container .progress-bar{
 	color:#fff;
 	text-decoration:none;
 	transform:translateY(0.5em);
+}
+.form{
+	padding-top:50px;
 }
 .space-craft{
 	background:url('../img/space-craft.png') no-repeat center center;
@@ -121,14 +190,14 @@ section.about-me .expertise-container .progress-bar{
 }
 .big-title {
     margin: 0 auto;
-    padding: 0 1.25em 10em;
+    padding: 12em 1.25em 10em;
     width: 100%;
     text-align: center;
-    position: fixed;
+/*    position: fixed;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);*/
    	animation-name: float-big-title;
     animation-duration: 5s;
     animation-iteration-count: infinite;

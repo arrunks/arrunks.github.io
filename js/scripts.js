@@ -16,10 +16,15 @@
 
 		// Customizing a reveal set
 		sr.reveal('.about-text-container', { duration: 500 });
-		sr.reveal('.expertise-container', { duration: 500 },50);
 		sr.reveal('.profile-pic', { duration: 500,rotate: { x: 90, y: 90, z: 90 } });
-		sr.reveal('.what-i-can', { duration: 500 });
-
+		sr.reveal('#clean-code', { duration: 1000,origin: 'left' });
+		sr.reveal('#responsive-ui', { duration: 1000 ,origin: 'right'});
+		sr.reveal('#cloud-development', { duration: 1000 ,origin: 'left'});
+		sr.reveal('#fast-performance', { duration: 1000 ,origin: 'right'});
+		sr.reveal('#expertise', { duration: 1000 ,origin: 'right'});
+		sr.reveal('.projects a', { duration: 800 });
+		sr.reveal('.resume', { duration: 800 });
+		sr.reveal('.contact-me', { duration: 800 });
 	});
 
 	function generateStars(count){
