@@ -60,7 +60,7 @@ section.about-me .expertise-container .progress-bar{
 	background-color:rgb(51, 48, 71);
 }
 section.projects{
-	background:rgb(240, 238, 249);
+	/*background:rgb(240, 238, 249);*/
 	min-height:400px;
 	margin:7em 0;
 	padding:3em 0;
