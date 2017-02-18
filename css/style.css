@@ -62,14 +62,13 @@ section.about-me .expertise-container .progress-bar{
 section.projects{
 	/*background:rgb(240, 238, 249);*/
 	min-height:400px;
-	margin:7em 0;
-	padding:3em 0;
+	padding:2em 0;
 }
 section.contact-me{
 	/*background:#607D8B;*/
 	min-height:600px;
-	padding:3em 0;
-	margin:4em 0 0 0;
+	padding:2em 0;
+	/*margin:4em 0 0 0;*/
 	/*color:#fff;*/
 }
 section.projects a{
