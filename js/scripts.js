@@ -16,7 +16,7 @@
 
 		// Customizing a reveal set
 		sr.reveal('.about-text-container', { duration: 500 });
-		sr.reveal('.profile-pic', { duration: 500,rotate: { x: 90, y: 90, z: 90 } });
+		sr.reveal('.profile-pic', { duration: 500});
 		sr.reveal('#clean-code', { duration: 1000,origin: 'left' });
 		sr.reveal('#responsive-ui', { duration: 1000 ,origin: 'right'});
 		sr.reveal('#cloud-development', { duration: 1000 ,origin: 'left'});

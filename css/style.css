@@ -120,6 +120,9 @@ section.projects a .project-name {
 textarea{
 	resize:none;
 }
+.resume p{
+	font-size:1.2em;
+}
 .view-profile{
 	position:absolute;
 	bottom:4em;
