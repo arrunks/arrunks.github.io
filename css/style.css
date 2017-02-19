@@ -37,13 +37,15 @@ section.about-me p{
 	font-size:0.9em;
 }
 section.about-me h2{
-	font-size:1.5em;
+	font-size:1.7em;
+	font-weight:500;
 }
 section.about-me .about-text-container{
 	margin:1em 0 2.5em;
 }
 section.about-me .about-text-container p{
-	font-size:1em;
+	font-size:1.5em;
+	margin:1.5em 0 1em;
 }
 section.about-me .expertise-container h3{
 	font-size: 1.5em;
@@ -76,8 +78,8 @@ section.projects a{
     display: inline-block;
     width: 300px;
     position:relative;
-    margin:50px;
-    box-shadow:10px 10px 10px 0px #ccc;
+    margin:50px 0 10px 0;
+    box-shadow:11px 10px 25px -5px #333047;
 }
 section.projects a img{
 	height:250px;
@@ -90,7 +92,7 @@ section.projects a:before{
 	right:0;
 	bottom:0;
 	background:#000;
-	opacity:0.4;
+	opacity:0.2;
 }
 section.projects a .project-name {
     position: absolute;
@@ -113,6 +115,7 @@ section.projects a .project-name {
 .can-item .text-container{
 	max-width: 300px;
     margin: 0 auto;
+    font-size:1.3em;
 }
 textarea{
 	resize:none;
