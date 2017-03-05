@@ -28,230 +28,155 @@
 			</div>
 		</div>
 	</div>
-<a class="view-profile" data-scroll href="#aboutMe"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-</section>
-<section class="about-me" id="aboutMe">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h1>Arun Kumar</h1>
-				<p>Front-End Developer</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 about-text-container">
-				<h2>ABOUT ME</h2>
-				<p>Hi ! My name is Arun and I am a self-taught web-developer living in Gurugram, India. I have had work experience of more than 2 years as a front-end developer.I have a bachelor's degree in Computer Science and Engineering.I keep looking for new trends, frameworks in front-end development and keep myself busy learning and experimenting with them.</p>
-			</div>
-		</div>
-		<div class="row expertise-container">
-			<div class="col-md-4">
-				<img class="img-responsive profile-pic" alt="arun-kumar" src="img/profile-pic.jpg"/>
-			</div>
-			<div class="col-md-6 col-md-offset-1" id="expertise">
-				<h3>EXPERTISE</h3>
-				<h4>HTML / CSS3</h4>
-				<div class="progress">
-  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-  					</div>
-				</div>
-				<h4>JAVASCRIPT</h4>
-				<div class="progress">
-  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-  					</div>
-				</div>
-				<h4>ANGULAR JS</h4>
-				<div class="progress">
-  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-  					</div>
-				</div>
-				<h4>JQUERY</h4>
-				<div class="progress">
-  					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-  					</div>
-				</div>
-			</div>
-		</div>
+	<div class="navigation-menu" id="nav-main">
+		<a href="#" title="about-me" data-target="about-me" onclick="showOverlayedSection()">About Me</a>
+		<a href="#" title="professional experience" data-target="professional-experience" onclick="showOverlayedSection()">Professional Experience</a>
+		<a href="#" title="contact me" data-target="contact-me" onclick="showOverlayedSection()">Contact Me</a>
 	</div>
 </section>
-<section class="what-i-can">
+<section id="overlayed-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>WHAT I CAN</h2>
-				<hr>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="can-item" id="clean-code">
-					<div class="icon-container text-center">
-						<i class="fa fa-code"></i>
-						<h5>CLEAN CODE</h5>
-					</div>
-					<div class="text-container text-center">
-						<p>Write valid html5 and search-engine friendly code and I can write maintainable and modular CSS/Javascript</p>
+				<div class="content">
+					<div class="close">X</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="navigation-top-gap visible-lg-block"></div>
+							<div class="navigation-menu">
+								<a href="#" title="about-me" data-target="about-me">About Me</a>
+								<a href="#" title="professional experience" data-target="professional-experience">Professional Experience</a>
+								<a href="#" title="contact me" data-target="contact-me">Contact Me</a>
+							</div>
+						</div>
+						<div class="col-md-9" id="dynamic-content-container">
+							<div id="about-me" class="dynamic-content">
+								<div class="row header">
+									<div class="col-md-12">
+										<h2>About Me</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="profile-header">
+											<div class="profile-picture">
+												<img src="./img/profile-pic.jpg" title="arun-kumar-pic" class="img-responsive"/>
+											</div>
+											<p class="full-name">Arun Kumar</p>
+											<p><small>27, Male</small></p>
+											<p class="location">Gurugram, India</p>
+										</div>
+									</div>
+									<div class="col-md-9">
+										<p class="about-me-text">Hi, I am Arun living in gurugram.I am a self taught web-developer with bachelor's in computer science & engineering.I am always up for a new challenges to brush up my front-end skills.</p>
+										<div class="skills-section">
+										<h4>Skills</h4>
+										<p><small>HTML / CSS3</small></p>
+										<div class="progress">
+  											<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+    											<span class="sr-only">90% Complete</span>
+  											</div>
+										</div>
+										<p><small>JAVASCRIPT</small></p>
+										<div class="progress">
+  											<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    											<span class="sr-only">80% Complete</span>
+  											</div>
+										</div>
+										<p><small>JQUERY</small></p>
+										<div class="progress">
+  											<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+    											<span class="sr-only">90% Complete</span>
+  											</div>
+										</div>
+										<p><small>ANGULARJS</small></p>
+										<div class="progress">
+  											<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    											<span class="sr-only">60% Complete</span>
+  											</div>
+										</div>
+										<p><small>REACTJS</small></p>
+										<div class="progress">
+  											<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+    											<span class="sr-only">30% Complete</span>
+  											</div>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="professional-experience" class="dynamic-content">
+								<div class="row header">
+									<div class="col-md-12">
+										<h2>Professional Experience</h2>
+									</div>
+								</div>
+								<div class="content-wrapper">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="company">
+											<p class="time-span text-center">December, 2016 - Present</p>
+											<p class="company-name text-center"><strong>PolicyBazaar.com</strong></p>
+											<p class="designation text-center"><small>Technical Associate</small></p>
+											<p class="role text-center">Policybazaar is an Indian online life insurance and general insurance comparison portal.I specifically work with their Term insurance team, where I have to incorporate HTML with the back-end data using angularjs as a front-end framework.</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="company">
+											<p class="time-span text-center">September, 2014 - November, 2016</p>
+											<p class="company-name text-center"><strong>Oodles Technologies Pvt. Ltd.</strong></p>
+											<p class="designation text-center"><small>Assistant Consultant</small></p>
+											<p class="role text-center">Oodles Technologies is a web and mobile application development company in India.I started my professional career with them where my role was to convert designs to pages and work on font-end scripting afterwards.</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<h3>Projects</h3>
+											<div class="col-md-5 special-shadow-effect">
+												<p class="project-title">3baysover</p>
+												<a href="https://www.3baysover.com" class="project-url" target="_blank">https://www.3baysover.com</a>
+												<p class="project-about"><small>3baysover is B2B-Networking platform for tourism professionals.I worked with oodles technologies on this project where I did the psd to html conversion.</small></p>
+											</div>
+											<div class="col-md-5 col-md-offset-1 special-shadow-effect">
+												<p class="project-title">DigitalCoinsExchange</p>
+												<a href="https://www.digitalcoinsexchange.com"  target="_blank" class="project-url">https://www.digitalcoinsexchange.com</a>
+												<p class="project-about"><small>DCX is a digital cryptocurrency trading platform offering bitcoin wallet services to buy & sell.This was my first project I did with oodles Technologies.</small></p>
+											</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div id="contact-me" class="dynamic-content">
+								<div class="row header">
+									<div class="col-md-12">
+										<h2>Contact Me</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 text-center">
+										<p>Follow/Connect on my social network</p>
+										<a href="https://www.linkedin.com/in/arun-kumar-07244351/" target="_blank" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+										<a href="https://github.com/arrunks" class="social-link" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+										<a href="https://twitter.com/arrunks" class="social-link" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										<a href="https://www.facebook.com/arunkumarssingh" class="social-link facebook-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p>Shoot me an email at : <a href="mailto:arunk.s@outlook.com?Subject=Hello%20Arun" target="_top">arunk.s@outlook.com</a> or add me on Skype : arun.oodles </p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="can-item" id="responsive-ui">
-					<div class="icon-container text-center">
-						<i class="fa fa-desktop"></i>
-						<h5>RESPONSIVE UI</h5>
-					</div>
-					<div class="text-container text-center">
-						<p>I can make webpages fit for any screen size and type.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="can-item" id="cloud-development">
-					<div class="icon-container text-center">
-						<i class="fa fa-cloud"></i>
-						<h5>CLOUD DEVELOPMENT</h5>
-					</div>
-					<div class="text-container text-center">
-						<p>Work, fix and merge code easily on </p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="can-item" id="fast-performance">
-					<div class="icon-container text-center">
-						<i class="fa fa-rocket"></i>
-						<h5>FAST PERFORMANCE</h5>
-					</div>
-					<div class="text-container text-center">
-						<p>I can optimize pages for faster loading time.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="projects">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Projects</h2>
-				<hr>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 text-center col-md-offset-2">
-				<a href="https://www.3baysover.com" title="3baysover" target="_blank">
-					<img src="img/3bays.png" title="3baysover" alt="3baysover" class="img-responsive"/>
-					<span class="project-name">3baysover</span>
-				</a>
-			</div>
-			<div class="col-md-4 text-center">
-				<a href="https://www.digitalcoinsexchange.com" title="DCX" target="_blank">
-					<img src="img/dcx.png" title="dcx" alt="DCX" class="img-responsive"/>
-					<span class="project-name">DigitalCoinsExchange</span>
-				</a>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="resume">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>RESUME</h2>
-				<hr>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<h3>Education</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<h4>Maharishi Dayanand University</h4>
-				<p>2008 - 2012</p>
-			</div>
-			<div class="col-md-6 col-md-offset-1">
-				<h4>Bachelor of Technology</h4>
-				<p>Computer Science & Engineering</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<h3>Experience</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<h4>PolicyBazaar.com</h4>
-				<p>Dec. 2016 - Present</p>
-			</div>
-			<div class="col-md-6 col-md-offset-1">
-				<h4>Technical Associate</h4>
-				<p>I work on front-end data modelling using angularjs and make sure the user-experience is smooth.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<h4>Oodles Technologies Pvt. Ltd.</h4>
-				<p>Sep. 2014 - Nov. 2016</p>
-			</div>
-			<div class="col-md-6 col-md-offset-1">
-				<h4>Assistant Consultant - UI</h4>
-				<p>Started my professional career with Oodles, where my role was to convert design psd to pixel-perfect htmls and integrate jquery plugins to fit the need.</p>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="contact-me">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Contact Me</h2>
-				<hr>
-			</div>
-		</div>
-		<div class="row">
-			<form class="form col-md-12" action="https://formspree.io/arunk.s@outlook.com" method="post">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-			    			<label for="name">Name</label>
-			    			<input type="text" name="name" class="form-control" id="name">
-			  			</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-			    			<label for="email">Email address:</label>
-			    			<input type="email" name="email" class="form-control" id="email">
-			  			</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-			    			<label for="message">Message</label>
-			    			<textarea rows="5" type="text" name="message" class="form-control"></textarea>
-			  			</div>
-					</div>
-				</div>
-			  <button type="submit" class="btn btn-default">Send</button>
-			</form>
-		</div>
-	</div>
-</section>
-<footer>
-	<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<p>© 2017 Arun Kumar - CV Portofolio. All Rights Reserved</p>
-		</div>
-	</div>
-	</div>
-</footer>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/typed.min.js"></script>

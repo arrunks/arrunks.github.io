@@ -1,8 +1,7 @@
-(function(){
 	$(document).ready(function(){
 		generateStars(10);
 
-		smoothScroll.init();
+		/*smoothScroll.init();*/
 
 		$(".sub-title").typed({
         strings: ["Front-End Developer","Web Enthusiast"],
@@ -11,8 +10,20 @@
         backDelay: 3000
       	});
 
+      	$(document).on('click','.navigation-menu>a',function(){
+      		var target = $(this).data('target');
+      		$('.navigation-menu>a').removeClass('active');
+      		$('.navigation-menu>a[data-target="'+target+'"]').addClass('active');
+      		$('.dynamic-content').hide();
+      		$('#'+target).show();
+      	});
 
-      	window.sr = ScrollReveal({ reset: true });
+      	$('.close').click(function(){
+      		hideOverlayedSection();
+      	});
+
+
+/*      	window.sr = ScrollReveal({ reset: true });
 
 		// Customizing a reveal set
 		sr.reveal('.about-text-container', { duration: 500 });
@@ -24,8 +35,18 @@
 		sr.reveal('#expertise', { duration: 1000 ,origin: 'right'});
 		sr.reveal('.projects a', { duration: 800 });
 		sr.reveal('.resume', { duration: 800 });
-		sr.reveal('.contact-me', { duration: 800 });
+		sr.reveal('.contact-me', { duration: 800 });*/
 	});
+    function showOverlayedSection(){
+		$('#overlayed-section').addClass('shown');
+		$('#nav-main').hide();
+	}
+
+	function hideOverlayedSection(){
+		$('#overlayed-section').removeClass('shown');
+		$('#nav-main').show();
+	}
+
 
 	function generateStars(count){
 		for(i=0;i<=count;i++){
@@ -60,4 +81,3 @@
 		};
 
 	};
-})();
