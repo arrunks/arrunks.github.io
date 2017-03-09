@@ -1,0 +1,291 @@
+body, html {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+.relative{position:relative;}
+hr{
+	margin: 18px 0;
+    background-color: transparent;
+    border-top: 2px dashed rgb(51, 48, 71);
+}
+#section-main{
+	height:100vh;
+	background:url('../img/bg-1.jpg') repeat-y;
+	background-size: cover;
+	overflow:hidden;
+}
+section{
+	width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+#overlayed-section{
+    position:fixed;
+    top:100vh;
+    left:0;
+    height:100%;
+    overflow:auto;
+}
+#overlayed-section.shown{
+    top:0;
+}
+section.section-hidden{
+    display:none;
+}
+section.section-visible{
+    display:block;
+}
+section .content{
+background: #ccc;
+    margin: 5% 10%;
+    padding: 0;
+    position: relative;
+    min-height: 475px;
+    border-radius: 5px;
+}
+.company{
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: 0px 1px 3px 0px #ccc;
+    border-bottom-right-radius: 3em;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 9;
+    height: 25px;
+    font-size: 13px;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    width: 25px;
+    background: #fff;
+    opacity: 0.8;
+}
+.content .header h2{
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #ccc;
+}
+.profile-header{
+    margin:0 auto;
+    text-align:center;
+}
+.profile-header p{
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 3px 0px #ccc;
+    border-bottom-right-radius: 20em;
+}
+.profile-picture{
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    box-shadow: 2px 3px 18px -2px #999;
+}
+.special-shadow-effect{
+    box-shadow: 0px 1px 3px 0px #ccc;
+    border-bottom-right-radius: 5em;
+    word-wrap:break-word;
+}
+p.location{
+    margin-bottom:15px;
+    font-size:10px;
+}
+p.project-title{
+    margin-bottom:10px;
+    margin-top:10px;
+}
+.project-url{
+    display:block;
+    margin-bottom:10px;
+}
+p.about-me-text{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 3px 0px #ccc;
+    border-bottom-right-radius: 20em;
+    padding: 10px 25px 10px 10px;
+    word-wrap: break-word;
+}
+.social-link{
+    transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+}
+.social-link.facebook-link{
+        padding: 5px 15px;
+        margin-bottom:20px;
+}
+#nav-main>a{
+       transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease; 
+}
+#nav-main>a:hover{
+    transform:scale(1.2);
+}
+.skills-section{
+    margin-top:30px;
+}
+.progress{
+    height: 5px;
+    margin-bottom: 10px;
+}
+.progress-bar{
+        width: 90%;
+    background-color: #ccc;
+}
+.dynamic-content{
+    padding: 2em;
+    min-height: 474px;
+    background: #fff;
+    box-shadow: -10px 0px 20px -3px #999;
+}
+.navigation-top-gap{
+    display:block;
+    height:130px;
+}
+.project-url{
+    word-wrap:break-word;
+}
+.content .navigation-menu {
+    color: black;
+    width: 100%;
+    margin: initial;
+    position: initial;
+    transform: none;
+    display: inline-block;
+    padding:15px 0;
+}
+.content .navigation-menu a{
+    color: #000;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size:13px;
+    text-decoration:none !important;
+           transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+}
+.content .navigation-menu a.active{
+    background:#fff;
+    font-size: 16px;
+    box-shadow: 1px 4px 10px 1px #999;
+}
+#about-me,
+#professional-experience,
+#contact-me{
+    display:none;
+}
+.social-link{
+    border: 1px solid #444;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    color: #444;
+}
+.navigation-menu{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom: 3em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.navigation-menu > a{
+    color:#fff;
+    display:inline-block;
+    font-size:16px;
+}
+.space-craft{
+	background:url('../img/space-craft.png') no-repeat center center;
+	height:300px;
+	width:300px;
+	background-size:100%;
+	position:absolute;
+	bottom:-200px;
+	right:-200px;
+	animation-name: floating-space-craft;
+    animation-duration: 200s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes floating-space-craft {
+    0%   {top:500px;right:-500px;}
+    25% {top:400px;right:1000px;height:100px;width:100px;}
+    50% {top:300px;right:3000px;height:50px;width:50px;}
+    60% {top:200px;right:4000px;height:20px;width:20px;}
+    75% {top:100px;right:4000px;height:0px;width:0px;}
+    100% {top:-200px;right:4000px;height:0px;width:0px;}
+}
+@keyframes float-big-title {
+    0%   {padding-left:10px;}
+    25% {padding-left:20px;}
+    50% {padding-left:30px;}
+    75% {padding-left:20px;}
+    100% {padding-left:10px;}
+}
+.star-glowing{
+	height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background: #fff;
+    opacity:0;
+    transition:all 0.5s ease;
+    position: absolute;
+    box-shadow: 0px 0px 4px 1px #fff;
+}
+.big-title {
+    margin: 0 auto;
+    padding: 15% 1.25% 10%;
+    width: 100%;
+    text-align: center;
+   	animation-name: float-big-title;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.big-title h1 {
+    text-transform: uppercase;
+    padding: 0 0 .2em;
+    color: #fff;
+    font-weight: 800;
+    font-size: 5em;
+    margin: 0 auto
+}
+.big-title p {
+    color: #fff;
+    padding: 0 0 .6em;
+    font-weight: 400;
+    font-size: 2.25em;
+    margin: 0 auto
+}
+/* Heading */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
